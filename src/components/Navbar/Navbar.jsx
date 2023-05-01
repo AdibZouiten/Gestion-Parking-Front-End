@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import logo from './../../assets/logoipsum-298.svg'
+import logo from './../../assets/logoipsum-245(1).svg'
 
 function Navbar() {
     return (
@@ -14,13 +14,13 @@ function Navbar() {
                         <a className='nav-link' href='#'>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Reservation</a>
+                        <a className='nav-link' href='#'>Add</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Info</a>
+                        <a className='nav-link' href='#'>Search</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Profile</a>
+                        <a className='nav-link' href='#'>Display</a>
                     </li>
                 </ul>
             </div>
