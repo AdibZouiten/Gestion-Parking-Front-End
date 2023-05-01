@@ -1,34 +1,47 @@
 {
-    "user": [
+    "Utilisateur": [
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
+            "idU": 1,
+            "nomUtil": "Doe",   
+            "prenUtil": "John",   
+            "adresseUtil": "123 Main St",   
+            "pass": "password"
+        }
+    ],
+    
+    "Parking" : [
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
+            "idPark": 1,    
+            "nomPark": "Parking 1",    
+            "ville": "Montreal",    
+            "nbPlace": 50,    
+            "nbPlaceLibre": 25
+        }
+    ],
+
+    "TypeTarif":[
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
+            "idT": 1,    
+            "nomType": "Tarif A"
+        }
+    ],
+
+    "TarifParking":[
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
+            "idPark": 1,    
+            "idType": 1,    
+            "prix": 10.99
+        }
+    ],
+
+    "Stationnements":[
         {
-            "id": 1,
-            "name": "Leanne Graham",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
+            "idS": 1,    
+            "dateStat": "2023-05-01",    
+            "idUtil": 1,    
+            "idPark": 1,    
+            "idType": 1,    
+            "nbUnit": 2
         }
     ]
 }
