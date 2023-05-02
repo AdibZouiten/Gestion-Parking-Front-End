@@ -1,0 +1,39 @@
+
+.add{
+    background-color:#111827;
+    padding:1em 0em;
+}
+.add-form{
+    padding-top:4em;
+}
+.add-form-row{
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    max-width:900px;
+    margin:0 auto;
+    margin-bottom:2em;
+    color:white;
+    opacity:0.9;
+}
+.add-form-row input{
+    background-color:#1d2432;
+    border:none;
+    color:white;
+    padding:1em;
+    border-radius:0.4em;
+}   
+.add-form-row label{
+    border:none;
+    color:white;
+    opacity:0.8;
+    margin-bottom:0.5em;
+}   
+
+.btn-submit-add{
+    background-color:#007aff;
+}
+.btn-submit-add:hover,
+.btn-submit-add:focus{
+    background-color:#007bffa5;
+}

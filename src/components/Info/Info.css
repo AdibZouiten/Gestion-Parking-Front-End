@@ -1,9 +1,9 @@
 .cont{
     background-color:#ebebeb;
-    min-height: 87.9vh;
+    min-height: 88.5vh;
 }
 .landing{
-    padding-top:3em;
+    
 }
 .landing-text{
     color: inherit;
@@ -35,7 +35,8 @@
     margin:0 auto;
     max-width:1200px;
     width:95%;
-    padding-top:6em;
+    align-items:center;
+    justify-content: center;
 }
 .img-landing{
     object-fit: cover;
