@@ -7,7 +7,6 @@ import Search from '../components/Search/Search'
 function Home() {
     return (
         <div>
-            <Navbar />
             <Landing />
             <Search />
         </div>
