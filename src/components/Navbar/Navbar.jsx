@@ -8,14 +8,14 @@ function Navbar() {
             <nav>
                 <div className='container'>
                     <div className='logo'>
-                        <a href='#'><img src={logo} alt="Logo" /></a>
+                        <a href='/'><img src={logo} alt="Logo" /></a>
                     </div>
                     <ul className='nav-list'>
                         <li className='nav-item active'>
                             <a className='nav-link' href='/'>Home</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='/AddForm/AddForm'>Add</a>
+                            <a className='nav-link' href='/Add'>Add</a>
                         </li>
                         <li className='nav-item'>
                             <a className='nav-link' href='/Search'>Search</a>
