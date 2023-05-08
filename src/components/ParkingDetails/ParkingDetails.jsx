@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import parkingsData from '../API/parkings.json';
 
-const ParkingDetails = ({ match }) => {
+function ParkingDetails(match) {
   const [parking, setParking] = useState(null);
 
   useEffect(() => {
     const fetchData = () => {
-      const parking = parkingsData.find(parking => parking.id === parseInt(match.params.id));
+      const parking = parkingsData.find((parking) => parking.id === parseInt(match.params.id));
       setParking(parking);
     };
     fetchData();
@@ -15,7 +15,7 @@ const ParkingDetails = ({ match }) => {
   if (!parking) {
     return <div>Loading...</div>;
   }
-
+  console.log(parking)
   return (
     <div>
       <h1>{parking.name}</h1>
@@ -24,6 +24,6 @@ const ParkingDetails = ({ match }) => {
       <p>Prix: {parking.price}</p>
     </div>
   );
-};
+}
 
 export default ParkingDetails;

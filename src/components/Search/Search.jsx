@@ -1,6 +1,6 @@
 import React from 'react'
 import './Search.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import parkings from "../API/parkings.json"
 
@@ -30,15 +30,12 @@ function Search() {
                         <ul>
                             {filteredParkings.map((parking) => (
                                 <li key={parking.id}>
-                                    <Link to={`/parkings/${parking.id}`}>
+                                    <Link to={`/ParkingDetails/${parking.id}`}>
                                         {parking.name}
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                    <div className='search-form-row'>
-                        <a className='btn btn-submit-search' href='DetailsParking.jsx'>Submit</a>
                     </div>
 
                 </form>
