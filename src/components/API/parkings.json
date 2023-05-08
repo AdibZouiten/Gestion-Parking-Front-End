@@ -1,164 +1,166 @@
-[
-  {
-    "id": 1,
-    "name": "Parking A",
-    "city": "Ville A",
-    "totalSpaces": 50,
-    "availableSpaces": 20,
-    "price": 10.99
-  },
-  {
-    "id": 2,
-    "name": "Parking B",
-    "city": "Ville B",
-    "totalSpaces": 100,
-    "availableSpaces": 70,
-    "price": 8.99
-  },
-  {
-    "id": 3,
-    "name": "Parking C",
-    "city": "Ville C",
-    "totalSpaces": 80,
-    "availableSpaces": 40,
-    "price": 12.99
-  },
-  {
-    "id": 4,
-    "name": "Parking D",
-    "city": "Ville D",
-    "totalSpaces": 60,
-    "availableSpaces": 10,
-    "price": 9.99
-  },
-  {
-    "id": 5,
-    "name": "Parking E",
-    "city": "Ville E",
-    "totalSpaces": 120,
-    "availableSpaces": 100,
-    "price": 7.99
-  },
-  {
-    "id": 6,
-    "name": "Parking F",
-    "city": "Ville F",
-    "totalSpaces": 70,
-    "availableSpaces": 50,
-    "price": 11.99
-  },
+{
+  
+  "Parking": [
     {
-      "id": 7,
-      "name": "Parking G",
-      "city": "Ville G",
-      "totalSpaces": 90,
-      "availableSpaces": 30,
-      "price": 10.49
-    },
-    {
-      "id": 8,
-      "name": "Parking H",
-      "city": "Ville H",
-      "totalSpaces": 70,
-      "availableSpaces": 20,
-      "price": 8.99
-    },
-    {
-      "id": 9,
-      "name": "Parking I",
-      "city": "Ville I",
-      "totalSpaces": 100,
-      "availableSpaces": 80,
-      "price": 12.99
-    },
-    {
-      "id": 10,
-      "name": "Parking J",
-      "city": "Ville J",
+      "id": 1,
+      "name": "Parking A",
+      "city": "Ville A",
       "totalSpaces": 50,
-      "availableSpaces": 10,
-      "price": 9.99
-    },
-    {
-      "id": 11,
-      "name": "Parking K",
-      "city": "Ville K",
-      "totalSpaces": 120,
-      "availableSpaces": 90,
-      "price": 7.99
-    },
-    {
-      "id": 12,
-      "name": "Parking L",
-      "city": "Ville L",
-      "totalSpaces": 80,
-      "availableSpaces": 40,
-      "price": 11.99
-    },
-    {
-      "id": 13,
-      "name": "Parking M",
-      "city": "Ville M",
-      "totalSpaces": 60,
       "availableSpaces": 20,
       "price": 10.99
     },
     {
-      "id": 14,
-      "name": "Parking N",
-      "city": "Ville N",
+      "id": 2,
+      "name": "Parking B",
+      "city": "Ville B",
       "totalSpaces": 100,
       "availableSpaces": 70,
       "price": 8.99
     },
     {
-      "id": 15,
-      "name": "Parking O",
-      "city": "Ville O",
+      "id": 3,
+      "name": "Parking C",
+      "city": "Ville C",
       "totalSpaces": 80,
       "availableSpaces": 40,
       "price": 12.99
     },
     {
-      "id": 16,
-      "name": "Parking P",
-      "city": "Ville P",
-      "totalSpaces": 70,
-      "availableSpaces": 30,
+      "id": 4,
+      "name": "Parking D",
+      "city": "Ville D",
+      "totalSpaces": 60,
+      "availableSpaces": 10,
       "price": 9.99
     },
     {
-      "id": 17,
-      "name": "Parking Q",
-      "city": "Ville Q",
+      "id": 5,
+      "name": "Parking E",
+      "city": "Ville E",
       "totalSpaces": 120,
       "availableSpaces": 100,
       "price": 7.99
     },
     {
-      "id": 18,
-      "name": "Parking R",
-      "city": "Ville R",
-      "totalSpaces": 90,
+      "id": 6,
+      "name": "Parking F",
+      "city": "Ville F",
+      "totalSpaces": 70,
       "availableSpaces": 50,
       "price": 11.99
     },
-    {
-      "id": 19,
-      "name": "Parking S",
-      "city": "Ville S",
-      "totalSpaces": 60,
-      "availableSpaces": 10,
-      "price": 10.49
-    },
-    {
-      "id": 20,
-      "name": "Parking T",
-      "city": "Ville T",
-      "totalSpaces": 70,
-      "availableSpaces": 20,
-      "price": 8.99
-    } 
-  
-]
+      {
+        "id": 7,
+        "name": "Parking G",
+        "city": "Ville G",
+        "totalSpaces": 90,
+        "availableSpaces": 30,
+        "price": 10.49
+      },
+      {
+        "id": 8,
+        "name": "Parking H",
+        "city": "Ville H",
+        "totalSpaces": 70,
+        "availableSpaces": 20,
+        "price": 8.99
+      },
+      {
+        "id": 9,
+        "name": "Parking I",
+        "city": "Ville I",
+        "totalSpaces": 100,
+        "availableSpaces": 80,
+        "price": 12.99
+      },
+      {
+        "id": 10,
+        "name": "Parking J",
+        "city": "Ville J",
+        "totalSpaces": 50,
+        "availableSpaces": 10,
+        "price": 9.99
+      },
+      {
+        "id": 11,
+        "name": "Parking K",
+        "city": "Ville K",
+        "totalSpaces": 120,
+        "availableSpaces": 90,
+        "price": 7.99
+      },
+      {
+        "id": 12,
+        "name": "Parking L",
+        "city": "Ville L",
+        "totalSpaces": 80,
+        "availableSpaces": 40,
+        "price": 11.99
+      },
+      {
+        "id": 13,
+        "name": "Parking M",
+        "city": "Ville M",
+        "totalSpaces": 60,
+        "availableSpaces": 20,
+        "price": 10.99
+      },
+      {
+        "id": 14,
+        "name": "Parking N",
+        "city": "Ville N",
+        "totalSpaces": 100,
+        "availableSpaces": 70,
+        "price": 8.99
+      },
+      {
+        "id": 15,
+        "name": "Parking O",
+        "city": "Ville O",
+        "totalSpaces": 80,
+        "availableSpaces": 40,
+        "price": 12.99
+      },
+      {
+        "id": 16,
+        "name": "Parking P",
+        "city": "Ville P",
+        "totalSpaces": 70,
+        "availableSpaces": 30,
+        "price": 9.99
+      },
+      {
+        "id": 17,
+        "name": "Parking Q",
+        "city": "Ville Q",
+        "totalSpaces": 120,
+        "availableSpaces": 100,
+        "price": 7.99
+      },
+      {
+        "id": 18,
+        "name": "Parking R",
+        "city": "Ville R",
+        "totalSpaces": 90,
+        "availableSpaces": 50,
+        "price": 11.99
+      },
+      {
+        "id": 19,
+        "name": "Parking S",
+        "city": "Ville S",
+        "totalSpaces": 60,
+        "availableSpaces": 10,
+        "price": 10.49
+      },
+      {
+        "id": 20,
+        "name": "Parking T",
+        "city": "Ville T",
+        "totalSpaces": 70,
+        "availableSpaces": 20,
+        "price": 8.99
+      }
+  ]
 
+}
