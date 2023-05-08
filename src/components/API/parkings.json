@@ -148,7 +148,7 @@
       "name": "Parking S",
       "city": "Ville S",
       "totalSpaces": 60,
-      "availableSpaces": 10,
+      "availableSpaces": 0,
       "price": 10.49
     },
     {

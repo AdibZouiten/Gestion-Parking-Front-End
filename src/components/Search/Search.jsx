@@ -6,6 +6,7 @@ import parkings from "../API/parkings.json"
 
 function Search() {
     const [maxPrice, setMaxPrice] = useState(0);
+    
 
   const filteredParkings = parkings.filter(
     (parking) => parking.price <= maxPrice
