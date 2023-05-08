@@ -1,10 +1,8 @@
 .cont{
     background-color:#ebebeb;
-    min-height: 88.5vh;
+    padding:3em;
 }
-.landing{
-    
-}
+
 .landing-text{
     color: inherit;
     opacity:0.7;
@@ -43,6 +41,9 @@
     width: 100%;
 }
 @media (max-width:720px){
+    .cont{
+        padding:1em;
+    }
     .landing-layout{
         flex-direction: column;
         padding-top:3em;
