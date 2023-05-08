@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Parking A",
+    "city": "Ville A",
+    "totalSpaces": 50,
+    "availableSpaces": 20,
+    "price": 10.99
+  },
+  {
+    "id": 2,
+    "name": "Parking B",
+    "city": "Ville B",
+    "totalSpaces": 100,
+    "availableSpaces": 70,
+    "price": 8.99
+  },
+  {
+    "id": 3,
+    "name": "Parking C",
+    "city": "Ville C",
+    "totalSpaces": 80,
+    "availableSpaces": 40,
+    "price": 12.99
+  }
+]
+

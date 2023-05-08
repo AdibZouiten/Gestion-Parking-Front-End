@@ -2,33 +2,18 @@ import React from 'react'
 import './Search.css'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import parkings from "../API/parkings.json"
 
 function Search() {
     const [maxPrice, setMaxPrice] = useState(0);
-    const [parkings, setParkings] = useState([]);
 
-    useEffect(() => {
-        // Fetch parkings data from API
-        const fetchParkings = async () => {
-            try {
-                const response = await fetch('/api/parkings');
-                const data = await response.json();
-                setParkings(data);
-            } catch (error) {
-                console.error(error);
-            }
-        };
+  const filteredParkings = parkings.filter(
+    (parking) => parking.price <= maxPrice
+  );
 
-        fetchParkings();
-    }, []);
-
-    const handlePriceChange = (event) => {
-        setMaxPrice(event.target.value);
-    };
-
-    const filteredParkings = parkings.filter(
-        (parking) => parking.price <= maxPrice
-    );
+  const handlePriceChange = (event) => {
+    setMaxPrice(event.target.value);
+  };
     return (
         <div>
             <div className='cont search'>
@@ -53,7 +38,7 @@ function Search() {
                         </ul>
                     </div>
                     <div className='search-form-row'>
-                        <a className='btn btn-submit-search' href='#'>Submit</a>
+                        <a className='btn btn-submit-search' href='DetailsParking.jsx'>Submit</a>
                     </div>
 
                 </form>
