@@ -8,7 +8,6 @@ function Home() {
     return (
         <div>
             <Landing />
-            <Search />
         </div>
     )
 }
