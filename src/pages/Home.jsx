@@ -1,7 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import Landing from '../components/Landing/Landing'
-import Search from '../components/Search/Search'
+import Landing from '../components/LoginPage/LoginPage'
 
 
 function Home() {
