@@ -17,6 +17,25 @@ function AddForm() {
         const idPark = idParkRef.current.value;
         const nomType = nomTypeRef.current.value;
 
+
+        if(!idU || isNaN(idU)) {
+
+            console.error('ID utilisateur est invalid');
+            return;
+        }
+        
+        if(!idPark || isNaN(idPark)) {
+
+            console.error('ID parking est invalid');
+            return;
+        }
+        if(!nomType) {
+
+            console.error('Type Tarif est invalid');
+            return;
+        }
+        
+
         const form_data = {
             idU: idU,
             idPark: idPark,
@@ -40,6 +59,7 @@ function AddForm() {
         
     };
 
+    
     
     return (
         <div className='cont add'>
