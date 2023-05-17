@@ -20,7 +20,7 @@
     transition: 500ms;
 }
 .Login{
-    background-color:#111827;
+    background-color:rgba(29, 149, 255, 0.799);
     padding:1em 0em;
 
 }
@@ -51,8 +51,15 @@
     opacity:0.8;
     margin-bottom:0.5em;
 }
+.Login-form-row p{
+    border:none;
+    color:white;
+    opacity:0.8;
+    margin-bottom:0.5em;
+}
+
 .btn-submit-Login{
-    background-color:#007aff;
+    background-color:#9dccff;
 }
 .btn-submit-Login:hover,
 .btn-submit-Login:focus{

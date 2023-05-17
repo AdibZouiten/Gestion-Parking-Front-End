@@ -1,20 +1,50 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Search.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import parkings from "../API/parkings.json"
 
 function Search() {
     const [maxPrice, setMaxPrice] = useState(0);
-    
-
-  const filteredParkings = parkings.filter(
-    (parking) => parking.price <= maxPrice
-  );
-
-  const handlePriceChange = (event) => {
-    setMaxPrice(event.target.value);
-  };
+    const [parkings, setParkings] = useState([]);
+  
+    useEffect(() => {
+      // Fetch parkings data from API
+      fetch("http://127.0.0.1:8000/api/filtrerparking")
+      .then(response => response.json())
+      .then(
+        (data) => {
+            setParkings({
+            isLoaded: true,
+            items: data
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      )
+    //   const fetchParkings = async () => {
+    //     try {
+    //       const response = await fetch('http://127.0.0.1:8000/api/filtrerparking');
+    //       const data = await response.json();
+    //       console.log(data)
+    //       setParkings(data);
+    //     } catch (error) {
+    //       console.error(error);
+    //     }
+    //   };
+    //   fetchParkings();
+    }, []);
+  
+    const handlePriceChange = (event) => {
+      setMaxPrice(event.target.value);
+    };
+    // const filteredParkings = parkings.filter(
+    //   (parking) => parking.price <= maxPrice
+    // );
+  
     return (
         <div>
             <div className='cont search'>
@@ -29,10 +59,10 @@ function Search() {
                     </div>
                     <div className='search-form-row'>
                         <ul>
-                            {filteredParkings.map((parking) => (
-                                <li key={parking.id}>
-                                    <Link to={`/ParkingDetails/${parking.id}`}>
-                                        {parking.name}
+                            {parkings.map((parking) => (
+                                <li key={parking.idPark}>
+                                    <Link to={`/ParkingDetails/${parking.idPark}`}>
+                                        {parking.nomPark}
                                     </Link>
                                 </li>
                             ))}

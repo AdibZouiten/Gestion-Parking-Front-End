@@ -19,7 +19,7 @@ function LoginPage() {
         event.preventDefault();
 
         try {
-            const response = await fetch('/api/login', {
+            const response = await fetch('http://127.0.0.1:8000/api/Inscription', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -31,16 +31,15 @@ function LoginPage() {
             });
 
             if (response.ok) {
-                // Authentification réussie, rediriger vers la page d'accueil
-                window.location.href = '/home';
+                // Stockage réussi, rediriger vers la page d'accueil
+                window.location.href = '/Home';
             } else {
-                setError('Identifiant ou mot de passe incorrect.');
+                setError('Une erreur s\'est produite lors du stockage des données.');
             }
         } catch (error) {
             setError('Une erreur s\'est produite. Veuillez réessayer.');
         }
     };
-
     return (
         <div className='Login'>
             <div className='Login-form-row'>
