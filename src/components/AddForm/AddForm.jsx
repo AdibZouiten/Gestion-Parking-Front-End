@@ -42,7 +42,7 @@ function AddForm() {
             nomType: nomType
         };
 
-        axios.post('/api/form', {
+        axios.post('http://127.0.0.1:8000/api/AjouterParking', {
             form_data
           })
           .then(response => {

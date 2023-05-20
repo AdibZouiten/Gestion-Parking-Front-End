@@ -2,29 +2,34 @@ import React, { useEffect } from 'react'
 import './Search.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios';
+
 
 function Search() {
     const [maxPrice, setMaxPrice] = useState(0);
     const [parkings, setParkings] = useState([]);
   
+    // useEffect(() => {
+    //   // Fetch parkings data from API
+    //   fetch("http://127.0.0.1:8000/api/filtrerparking")
+    //   .then(response => response.json())
+    //   .then((data) => { setParkings({data})
+    //   console.log(data)
+
+    //   })
+    // }, []);
     useEffect(() => {
-      // Fetch parkings data from API
-      fetch("http://127.0.0.1:8000/api/filtrerparking")
-      .then(response => response.json())
-      .then(
-        (data) => {
-            setParkings({
-            isLoaded: true,
-            items: data
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      )
+        const fetchData = async () => {
+          try {
+            const response = await axios.get('http://127.0.0.1:8000/api/filtrerparking');
+            setParkings(response.data);
+            console.log(response.data)
+          } catch (error) {
+            console.error(error);
+          }
+        };
+        fetchData();
+      }, []);
     //   const fetchParkings = async () => {
     //     try {
     //       const response = await fetch('http://127.0.0.1:8000/api/filtrerparking');
@@ -36,7 +41,7 @@ function Search() {
     //     }
     //   };
     //   fetchParkings();
-    }, []);
+   
   
     const handlePriceChange = (event) => {
       setMaxPrice(event.target.value);
