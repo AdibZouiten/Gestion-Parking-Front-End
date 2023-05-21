@@ -3,14 +3,21 @@ import './LoginPage.css'
 import { useState } from 'react';
 
 function LoginPage() {
-    const [username, setUsername] = useState('');
+    const [nomUtil, setNomUtil] = useState('');
+    const [prenUtil, setPrenUtil] = useState('');
+    const [AdresseUtil, setAdresseUtil] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
+    const handleNomUtilChange = (event) => {
+        setNomUtil(event.target.value);
     };
-
+    const handlePrenUtilChange = (event) => {
+        setPrenUtil(event.target.value);
+    };
+    const handleAdresseUtilChange = (event) => {
+        setAdresseUtil(event.target.value);
+    };
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
@@ -25,7 +32,7 @@ function LoginPage() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username,
+                    nomUtil,
                     password,
                 }),
             });
@@ -47,20 +54,44 @@ function LoginPage() {
             </div>
             {error && <p>{error}</p>}
             <form className='Login-form' onSubmit={handleSubmit}>
-
+                {/* nom d'utlisateur */}
                 <div className='Login-form-row'>
-                    <label className='login-text' htmlFor="username">Identifiant:</label>
+                    <label className='login-text' htmlFor="nomUtil">Nom d'utilisateur :</label>
                 </div>
                 <div className='Login-form-row'>
                     <input
                         type="text"
-                        id="username"
-                        value={username}
-                        onChange={handleUsernameChange}
+                        id="nomUtil"
+                        value={nomUtil}
+                        onChange={handleNomUtilChange}
+                    />
+                </div>
+                {/* prenom d'utilisateur */}
+                <div className='Login-form-row'>
+                    <label className='login-text' htmlFor="prenUtil">Prenom d'utilisateur :</label>
+                </div>
+                <div className='Login-form-row'>
+                    <input
+                        type="text"
+                        id="prenUtil"
+                        value={prenUtil}
+                        onChange={handlePrenUtilChange}
                     />
                 </div>
 
-
+                {/* Adresse utlisateur  */}
+                <div className='Login-form-row'>
+                    <label htmlFor="AdresseUtil">Adresse Utilisateur :</label>
+                </div>
+                <div className='Login-form-row'>
+                    <input
+                        type="text"
+                        id="AdresseUtil"
+                        value={AdresseUtil}
+                        onChange={handleAdresseUtilChange}
+                    />
+                </div>
+                {/* password utilisateur */}
                 <div className='Login-form-row'>
                     <label htmlFor="password">Mot de passe:</label>
                 </div>
@@ -72,6 +103,7 @@ function LoginPage() {
                         onChange={handlePasswordChange}
                     />
                 </div>
+
 
                 <div className='Login-form-row'>
                     <button className='button-login' type="submit">Se connecter</button>

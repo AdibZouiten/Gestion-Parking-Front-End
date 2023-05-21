@@ -22,7 +22,7 @@ function Navbar() {
                             <Link className='nav-link' to='/Search'>Search</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/Display'>Display</Link>
+                            <Link className='nav-link' to='/Consulter'>Consulter</Link>
                         </li>
                     </ul>
                 </nav>

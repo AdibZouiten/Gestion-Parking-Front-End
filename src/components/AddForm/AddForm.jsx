@@ -37,12 +37,12 @@ function AddForm() {
         
 
         const form_data = {
-            idU: idU,
+            idUtilisateur: idU,
             idPark: idPark,
-            nomType: nomType
+            idType: nomType
         };
 
-        axios.post('http://127.0.0.1:8000/api/AjouterParking', {
+        axios.post('http://127.0.0.1:8000/api/AjouterStationnement', {
             form_data
           })
           .then(response => {

@@ -1,27 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import parkingsData from '../API/parkings.json';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
-function ParkingDetails(match) {
-  const [parking, setParking] = useState(null);
+
+function ParkingDetails() {
+  const [parking, setParking] = useState({});
+  const { idPark } = useParams();
 
   useEffect(() => {
-    const fetchData = () => {
-      const parking = parkingsData.find((parking) => parking.id === parseInt(match.params.id));
-      setParking(parking);
+    const fetchParkingDetails = async () => {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/api/getParking/${idPark}`);
+        setParking(response.data);
+      } catch (error) {
+        console.error(error);
+      }
     };
-    fetchData();
-  }, [match.params.id]);
-
+    fetchParkingDetails();
+  }, [idPark]);
+  console.log(parking)
   if (!parking) {
     return <div>Loading...</div>;
   }
-  console.log(parking)
+
   return (
     <div>
-      <h1>{parking.name}</h1>
-      <p>Adresse: {parking.city}</p>
-      <p>Nombre de places libres: {parking.availableSpaces}</p>
-      <p>Prix: {parking.price}</p>
+      <h1>{parking.nomPark}</h1>
+      <p>Adresse: {parking.ville}</p>
+      <p>Nombre de places: {parking.nbPLace}</p>
+      <p>Nombre de places libres: {parking.nbPLaceLibre}</p>
+      <p>Prix: {parking.prix}</p>
     </div>
   );
 }

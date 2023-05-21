@@ -8,52 +8,27 @@ import axios from 'axios';
 function Search() {
     const [maxPrice, setMaxPrice] = useState(0);
     const [parkings, setParkings] = useState([]);
-
-    // useEffect(() => {
-    //   // Fetch parkings data from API
-    //   fetch("http://127.0.0.1:8000/api/filtrerparking")
-    //   .then(response => response.json())
-    //   .then((data) => { setParkings({data})
-    //   console.log(data)
-
-    //   })
-    // }, []);
+  
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const response = await axios.get('http://127.0.0.1:8000/api/filtrerparking', {
-                    params: {
-                        prix: maxPrice
-                    }
-                });
-                setParkings(response.data);
-                console.log(response.data)
-            } catch (error) {
-                console.error(error);
-            }
+          try {
+            const response = await axios.get('http://127.0.0.1:8000/api/filtrerparking', {
+                params: {
+                  prix: maxPrice
+                }
+              });
+               setParkings(response.data);
+            console.log(response.data)
+          } catch (error) {
+            console.error(error);
+          }
         };
         fetchData();
-    }, [maxPrice]);
-    //   const fetchParkings = async () => {
-    //     try {
-    //       const response = await fetch('http://127.0.0.1:8000/api/filtrerparking');
-    //       const data = await response.json();
-    //       console.log(data)
-    //       setParkings(data);
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    //   };
-    //   fetchParkings();
-
-
+      },[maxPrice]);
+  
     const handlePriceChange = (event) => {
-        setMaxPrice(event.target.value);
+      setMaxPrice(event.target.value);
     };
-    // const filteredParkings = parkings.filter(
-    //   (parking) => parking.price <= maxPrice
-    // );
-
     return (
         <div>
             <div className='cont search'>
