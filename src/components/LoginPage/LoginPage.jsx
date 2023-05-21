@@ -55,6 +55,7 @@ function LoginPage() {
             {error && <p>{error}</p>}
             <form className='Login-form' onSubmit={handleSubmit}>
                 {/* nom d'utlisateur */}
+                
                 <div className='Login-form-row'>
                     <label className='login-text' htmlFor="nomUtil">Nom d'utilisateur :</label>
                 </div>
@@ -109,6 +110,7 @@ function LoginPage() {
                     <button className='button-login' type="submit">Se connecter</button>
                 </div>
             </form>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         </div>
     );
 }

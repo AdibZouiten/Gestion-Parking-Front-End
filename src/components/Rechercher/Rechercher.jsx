@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import './Search.css'
+import './Rechercher.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 
 
-function Search() {
+function Rechercher() {
     const [maxPrice, setMaxPrice] = useState(0);
     const [parkings, setParkings] = useState([]);
   
@@ -59,4 +59,4 @@ function Search() {
     )
 }
 
-export default Search
+export default Rechercher

@@ -16,10 +16,10 @@ function Navbar() {
                             <Link className='nav-link' to='/'>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/AddForm'>Add</Link>
+                            <Link className='nav-link' to='/Ajouter'>Ajouter</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/Search'>Search</Link>
+                            <Link className='nav-link' to='/Rechercher'>Rechercher</Link>
                         </li>
                         <li className='nav-item'>
                             <Link className='nav-link' to='/Consulter'>Consulter</Link>

@@ -1,20 +1,16 @@
 .cont{
     background-color:#ebebeb;
     padding:3em;
-    /* background-image: url('bg.jpg');
-    background-size: cover;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+    height: 100%;
 }
 
-.login-text{
+.Consulter-text{
     color: inherit;
     opacity:0.7;
     display: inline-block;
     margin-top:0.5em;
 }
-.button-login{
+.button-Consulter{
     background-color:#007aff;
     display: inline-block;
     padding:0.8em 2em;
@@ -25,15 +21,15 @@
     text-decoration: none;
     transition: 500ms;
 }
-.Login{
+.Consulter{
     background-color:rgba(29, 149, 255, 0.799);
     padding:1em 0em;
 
 }
-.Login-form{
+.Consulter-form{
     padding-top:4em;
 }
-.Login-form-row{
+.Consulter-form-row{
     display: flex;
     flex-direction: column;
     width:95%;
@@ -44,43 +40,43 @@
     opacity:0.9;
 
 }
-.Login-form-row input{
+.Consulter-form-row input{
     background-color:#1d2432;
     border:none;
     color:white;
     padding:1em;
     border-radius:0.4em;
 }
-.Login-form-row label{
+.Consulter-form-row label{
     border:none;
     color:white;
     opacity:0.8;
     margin-bottom:0.5em;
 }
-.Login-form-row p{
+.Consulter-form-row p{
     border:none;
     color:white;
     opacity:0.8;
     margin-bottom:0.5em;
 }
 
-.btn-submit-Login{
+.btn-submit-Consulter{
     background-color:#9dccff;
 }
-.btn-submit-Login:hover,
-.btn-submit-Login:focus{
+.btn-submit-Consulter:hover,
+.btn-submit-Consulter:focus{
     background-color:#007bffa5;
 }
 
-.button-login:hover,
-.button-login:focus
+.button-Consulter:hover,
+.button-Consulter:focus
 {
     background-color:black;
     color: white;
     scale: 1.03;
 }
 
-.login-layout{
+.Consulter-layout{
     display: flex;
     margin:0 auto;
     max-width:1200px;
@@ -88,7 +84,7 @@
     align-items:center;
     justify-content: center;
 }
-.img-login{
+.img-Consulter{
     object-fit: cover;
     width: 100%;
 }
@@ -96,12 +92,15 @@
     .cont{
         padding:1em;
     }
-    .login-layout{
+    .Consulter-layout{
         flex-direction: column;
         padding-top:3em;
     }
-    .img-login{
+    .img-Consulter{
         height:300px;
         margin:0 auto;
     }
+}
+h1{
+    text-align: center;
 }

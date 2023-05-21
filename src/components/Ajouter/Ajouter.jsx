@@ -1,9 +1,9 @@
 import React ,{useRef} from 'react'
 import axios from 'axios';
 
-import './AddForm.css'
+import './Ajouter.css'
 
-function AddForm() {
+function Ajouter() {
 
     const idURef = useRef(null);
     const idParkRef = useRef(null);
@@ -93,4 +93,4 @@ function AddForm() {
     )
 }
 
-export default AddForm
+export default Ajouter
