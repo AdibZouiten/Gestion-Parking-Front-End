@@ -7,26 +7,28 @@ import Navbar from './components/Navbar/Navbar'
 import ParkingDetails from './components/ParkingDetails/ParkingDetails'
 import Consulter from './components/Consulter/Consulter'
 import LoginPage from './components/LoginPage/LoginPage'
+import { AuthProvider } from './pages/AuthContext'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
+      <AuthProvider>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Ajouter" element={<Ajouter />} />
           <Route path="/Rechercher" element={<Rechercher />} />
           <Route path="/Consulter" element={<Consulter />} />
-          <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />         
-         <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />
-          <Route path="/LoginPage" element={<LoginPage/>} />
+          <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />
+          <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
 
         </Routes>
+        </AuthProvider>
       </BrowserRouter>
 
     </div>
   );
 }
-
 export default App;

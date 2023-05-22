@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css'
 import logo from './../../assets/logoipsum-245(1).svg'
 import {  Link } from 'react-router-dom'
+import { AuthContext } from '../../pages/AuthContext';
 
 function Navbar() {
+    const { isLoggedIn } = useContext(AuthContext);
     return (
         <div>
             <nav>
+            {isLoggedIn && (
                 <nav className='navbar container'>
                     <div className='logo'>
                         <Link href='/'><img src={logo} alt="Logo" /></Link>
@@ -26,6 +29,7 @@ function Navbar() {
                         </li>
                     </ul>
                 </nav>
+                )}
             </nav>
         </div>
 
