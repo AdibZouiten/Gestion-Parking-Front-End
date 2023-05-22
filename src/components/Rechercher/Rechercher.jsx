@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import './Rechercher.css'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios';
+import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
 
 
 function Rechercher() {
@@ -42,7 +42,7 @@ function Rechercher() {
 
           </div>
           <div className='search-form-row'>
-            <ul>
+            {/* <ul>
               {parkings.map((parking) => (
                 <li key={parking.idPark}>
                   <Link to={`/ParkingDetails/${parking.idPark}`}>
@@ -51,10 +51,27 @@ function Rechercher() {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
+            <MDBListGroup style={{ minWidth: '22rem' }} light>
+              {parkings.map((parking) => (
+                <MDBListGroupItem
+                  key={parking.idPark}
+                  tag='a'
+                  href={`/ParkingDetails/${parking.idPark}`}
+                  action
+                  noBorders
+                  active={parking.idPark === 0}
+                  aria-current={parking.idPark === 0 ? 'true' : undefined}
+                  className='px-3'
+                >
+                  {parking.nomPark}
+                </MDBListGroupItem>
+              ))}
+            </MDBListGroup>
           </div>
 
         </form>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       </div>
     </div>
   )

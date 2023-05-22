@@ -20,7 +20,6 @@ function App() {
           <Route path="/Rechercher" element={<Rechercher />} />
           <Route path="/Consulter" element={<Consulter />} />
           <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />
-          <Route path="/ParkingDetails/:idPark" element={<ParkingDetails />} />
           <Route path="/" element={<LoginPage />} />
 
         </Routes>

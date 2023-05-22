@@ -115,8 +115,8 @@ function LoginPage() {
                 <MDBCol md='6' className='text-center text-md-start d-flex flex-column justify-content-center'>
 
                     <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{ color: 'hsl(218, 81%, 95%)' }}>
-                        Welcome to our  <br />
-                        <span style={{ color: 'hsl(218, 81%, 75%)' }}>Parking Management Software</span>
+                        Bienvenue à notre  <br />
+                        <span style={{ color: 'hsl(218, 81%, 75%)' }}>logiciel de gestion du stationnement</span>
                     </h1>
 
                     <p className='px-3' style={{ color: 'white' }}>

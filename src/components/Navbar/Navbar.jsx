@@ -17,13 +17,13 @@ function Navbar() {
                     <ul className='nav-list'>
                         
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/Ajouter'>Ajouter</Link>
+                            <Link className='nav-link' to='/Ajouter'>Ajouter Stationnement</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/Rechercher'>Rechercher</Link>
+                            <Link className='nav-link' to='/Rechercher'>Rechercher Parking</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to='/Consulter'>Consulter</Link>
+                            <Link className='nav-link' to='/Consulter'>Consulter votre compte</Link>
                         </li>
                     </ul>
                 </nav>
