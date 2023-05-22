@@ -147,50 +147,75 @@ function Testtest() {
 
     };
     return (
-        <div className='cont add'>
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 background-add">
+        <div className="mx-auto max-w-lg text-center">
+            <h1 className="text-2xl font-bold sm:text-3xl">Ajouter</h1>
 
-            <form onSubmit={handleSubmit} className='add-form' >
-                <div className='add-form-row'>
-                    <label htmlFor="dateStat">dateStat:</label>
-                    <input type="date" format="yyyy-MM-dd" id="dateStat" name="dateStat" value={dateStat} onChange={(e) => setdateStat(e.target.value)} required />
+        </div>
 
-                </div>
-                <div className='add-form-row'>
+        <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4" onSubmit={handleSubmit}>
+            <div>
+            <label htmlFor="email" className="sr-only">Email</label>
 
-                    <label htmlFor="nbUnit">Nombre d'unite:</label>
-                    <input type='number' id="nbUnit" name="nbUnit" value={nbUnit} onChange={(e) => setnbUnit(e.target.value)} required></input>
-                </div>
+            <div className="relative">
+                <input
+                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                type="date" format="yyyy-MM-dd" id="dateStat" name="dateStat" value={dateStat} onChange={(e) => setdateStat(e.target.value)} required 
+                />
+            </div>
+            </div>
 
-                <div className='add-form-row'>
+            <div>
+            <label htmlFor="password" className="sr-only">Nombre d'unite</label>
 
-                    <label htmlFor="Parking">Parking:</label>
+            <div className="relative">
+                <input
+                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                type='number' id="nbUnit" name="nbUnit" value={nbUnit} onChange={(e) => setnbUnit(e.target.value)} required
+                />
 
-                    <select id="parkings" name="parking" value={idPark} onChange={(e) => setidPark(e.target.value)}>
+            </div>
+            </div>
+
+            <div>
+            <label htmlFor="password" className="sr-only">Parking</label>
+
+            <div className="relative">
+                    <select  className='w-full rounded-lg bg-white border-gray-200 p-4 pe-12 text-sm shadow-sm' id="parkings" name="parking" value={idPark} onChange={(e) => setidPark(e.target.value)}>
                         {parking && parking.map((elem) => (
                             <>
                                 <option value={elem.idPark}>{elem.nomPark}</option>
                             </>
                         ))}
                     </select>
-                </div>
-                <div className='add-form-row'>
+            </div>
+            </div>
 
-                    <label htmlFor="type">type de paiment:</label>
 
-                    <select id="type" name="type" value={idType} onChange={(e) => setidType(e.target.value)}>
+            <div>
+            <label htmlFor="password" className="sr-only">type de paiment</label>
+
+            <div className="relative">
+                    
+                    <select className='w-full rounded-lg bg-white border-gray-200 p-4 pe-12 text-sm shadow-sm' id="type" name="type" value={idType} onChange={(e) => setidType(e.target.value)}>
                         {type && type.map((elem) => (
                             <>
                                 <option value={elem.idT}>{elem.nomType}</option>
                             </>
                         ))}
                     </select>
-                </div>
-                <div className='add-form-row'>
+            </div>
+            </div>
 
-                    <button  className='btn btn-submit-add' type="submit">Ajouter Stationnement</button>
-
-                </div>
-            </form>
+            <div className="flex items-center justify-center">
+            <button
+                type="submit"
+                className="inline-block rounded-lg bg-yellow-400 px-5 py-3 text-sm font-medium text-black"
+            >
+                submit
+            </button>
+            </div>
+        </form>
         </div>
     );
 }

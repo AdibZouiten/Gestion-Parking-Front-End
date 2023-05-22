@@ -1,4 +1,6 @@
-
+.Consulter{
+    height:100vh;
+}
 
 .Consulter-text{
     color: inherit;
@@ -13,7 +15,7 @@
     margin:1em 0;
     border:none;
     border-radius:0.5em;
-    color:white;
+    color:black;
     text-decoration: none;
     transition: 500ms;
 }
@@ -32,26 +34,27 @@
     max-width:900px;
     margin:0 auto;
     margin-bottom:2em;
-    color:white;
+    color:black;
     opacity:0.9;
 
 }
 .Consulter-form-row input{
     background-color:#1d2432;
     border:none;
-    color:white;
+    color:black;
     padding:1em;
     border-radius:0.4em;
+    border:1px solid black;
 }
 .Consulter-form-row label{
     border:none;
-    color:white;
+    color:black;
     opacity:0.8;
     margin-bottom:0.5em;
 }
 .Consulter-form-row p{
     border:none;
-    color:white;
+    color:black;
     opacity:0.8;
     margin-bottom:0.5em;
 }
@@ -68,7 +71,7 @@
 .button-Consulter:focus
 {
     background-color:black;
-    color: white;
+    color: black;
     scale: 1.03;
 }
 
@@ -99,8 +102,16 @@
 }
 .Consulter-form h1{
     text-align: center;
-    color: white;
+    color: black;
 }
 th,td{
-    color:white;
+    color:black;
+}
+
+
+.button-submit-con {
+    background-color: #eed202;
+    padding:1em;
+    border-radius:0.5em;
+    color: black;
 }

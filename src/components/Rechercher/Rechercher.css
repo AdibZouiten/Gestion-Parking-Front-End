@@ -1,10 +1,11 @@
 .search{
-    background-color:#111827;
+    background-color:white;
     padding:1em 0em;
 
 }
 .search-form{
     padding-top:4em;
+    min-height:100vh;
 }
 .search-form-row{
     display: flex;
@@ -13,20 +14,20 @@
     max-width:900px;
     margin:0 auto;
     margin-bottom:2em;
-    color:white;
+    color:black !important;
     opacity:0.9;
 
 }
 .search-form-row input{
-    background-color:#1d2432;
+    background-color:rgb(232, 232, 232);
     border:none;
-    color:white;
+    color:black;
     padding:1em;
     border-radius:0.4em;
 }
 .search-form-row label{
     border:none;
-    color:white;
+    color:black;
     opacity:0.8;
     margin-bottom:0.5em;
 }
@@ -36,4 +37,21 @@
 .btn-submit-search:hover,
 .btn-submit-search:focus{
     background-color:#007bffa5;
+}
+
+.search-item{
+    padding:1em;
+    border-radius:0.3em;
+
+}
+.search-item a{
+    color:black;
+    text-decoration:none;
+}
+.search-item a:hover{
+    text-decoration:underline;
+}
+
+.fa-circle-info{
+    margin-right:1em;
 }
