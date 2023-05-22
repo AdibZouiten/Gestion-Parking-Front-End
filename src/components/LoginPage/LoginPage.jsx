@@ -66,15 +66,11 @@
 // export default LoginPage;
 import React, { useContext, useState } from 'react';
 import {
-    MDBBtn,
     MDBContainer,
     MDBRow,
     MDBCol,
     MDBCard,
     MDBCardBody,
-    MDBInput,
-    MDBCheckbox,
-    MDBIcon
 }
     from 'mdb-react-ui-kit';
 import './LoginPage.css'
@@ -124,10 +120,10 @@ function LoginPage() {
                     </h1>
 
                     <p className='px-3' style={{ color: 'white' }}>
-                        Managing a parking lot can be a challenge, but with our powerful
-                        software, it's a breeze. Our platform is designed to streamline
-                        the management of parking facilities, making it easier for you
-                        to run your business efficiently.
+                        Gérer un stationnement peut être un défi, mais avec notre puissant
+                        logiciel, c’est un jeu d’enfant. Notre plateforme est conçue pour
+                        la gestion des parkings, pour vous faciliter la tâche
+                        pour gérer votre entreprise efficacement.
                     </p>
 
                 </MDBCol>
@@ -148,6 +144,7 @@ function LoginPage() {
                                     <label>Mot de passe:</label>
                                     <input type="password" value={pass} onChange={handlePasswordChange} />
                                 </div>
+                                {<div className='Login-form-row' style={{ color: 'red' }}>{error}</div>}
                                 <div className='Login-form-row'>
                                     <button className='button-login' type="submit">Se connecter</button>
                                 </div>

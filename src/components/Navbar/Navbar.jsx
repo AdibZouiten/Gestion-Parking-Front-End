@@ -15,9 +15,7 @@ function Navbar() {
                         <Link href='/'><img src={logo} alt="Logo" /></Link>
                     </div>
                     <ul className='nav-list'>
-                        <li className='nav-item active'>
-                            <Link className='nav-link' to='/'>Home</Link>
-                        </li>
+                        
                         <li className='nav-item'>
                             <Link className='nav-link' to='/Ajouter'>Ajouter</Link>
                         </li>
