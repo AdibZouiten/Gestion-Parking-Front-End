@@ -1,5 +1,12 @@
 .Consulter{
-    height:100vh;
+    height:90vh;
+    width:80%;
+    margin:0 auto;
+}
+.cont-table{
+    width:90%;
+    margin:0 auto;
+
 }
 
 .Consulter-text{

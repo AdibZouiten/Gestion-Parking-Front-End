@@ -128,16 +128,8 @@ function LoginPage() {
             >
             <p className="text-center text-lg font-medium">login in to your account</p>
 
-<<<<<<< HEAD
-                    <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{ color: 'hsl(218, 81%, 95%)' }}>
-                        Bienvenue à notre  <br />
-                        <span style={{ color: 'hsl(218, 81%, 75%)' }}>logiciel de gestion du stationnement</span>
-                    </h1>
-=======
             <div>
                 <label htmlFor="email" className="sr-only">Email</label>
->>>>>>> 873895c17c5e980ab5b9195db8645db9aec8b31b
-
                 <div className="relative">
                 <input
                     type="email"
