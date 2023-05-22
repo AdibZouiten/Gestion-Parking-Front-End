@@ -36,7 +36,7 @@ function Consulter() {
 
     return (
         <div>
-            <div className='Consulter'>
+            <div className='Consulter bg-white'>
                 <form className='Consulter-form'>
                     <h1>Consulter</h1>
                     <div className='Consulter-form-row'>
@@ -47,6 +47,7 @@ function Consulter() {
                             id='start-date'
                             value={startDate}
                             onChange={e => setStartDate(e.target.value)}
+                            className='bg-white'
                         />
                     </div>
                     <div className='Consulter-form-row'>
@@ -57,10 +58,11 @@ function Consulter() {
                             id='end-date'
                             value={endDate}
                             onChange={e => setEndDate(e.target.value)}
+                            className='bg-white'
                         />
                     </div>
                     <div className='Login-form-row'>
-                        <button className='button-login' onClick={handleSearch}>
+                        <button className='button-submit-con bg-black-400' onClick={handleSearch}>
                             Rechercher
                         </button>
                     </div>

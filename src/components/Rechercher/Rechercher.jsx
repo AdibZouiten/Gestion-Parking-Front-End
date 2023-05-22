@@ -44,8 +44,10 @@ function Rechercher() {
           <div className='search-form-row'>
             <ul>
               {parkings.map((parking) => (
-                <li key={parking.idPark}>
+                <li className='search-item' key={parking.idPark}>
+                  <i class="fa-solid fa-circle-info"></i>
                   <Link to={`/ParkingDetails/${parking.idPark}`}>
+                    
                     {parking.nomPark}
                     {console.log(parking.idPark)}
                   </Link>
