@@ -1,8 +1,4 @@
-.cont{
-    background-color:#ebebeb;
-    padding:3em;
-    height: 100%;
-}
+
 
 .Consulter-text{
     color: inherit;
@@ -22,7 +18,7 @@
     transition: 500ms;
 }
 .Consulter{
-    background-color:rgba(29, 149, 255, 0.799);
+    background-color:#111827;
     padding:1em 0em;
 
 }
@@ -101,6 +97,10 @@
         margin:0 auto;
     }
 }
-h1{
+.Consulter-form h1{
     text-align: center;
+    color: white;
+}
+th,td{
+    color:white;
 }

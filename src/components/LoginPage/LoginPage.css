@@ -1,12 +1,8 @@
-.cont{
+/* .cont{
     background-color:#ebebeb;
     padding:3em;
     height: 100%;
-    /* background-image: url('bg.jpg');
-    background-size: cover;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+    
 }
 html, body {
   height: 100%;
@@ -18,71 +14,15 @@ html, body {
     display: inline-block;
     margin-top:0.5em;
 }
-.button-login{
-    background-color:#007aff;
-    display: inline-block;
-    padding:0.8em 2em;
-    margin:1em 0;
-    border:none;
-    border-radius:0.5em;
-    color:white;
-    text-decoration: none;
-    transition: 500ms;
-}
 .Login{
     background-color:#111827;
     padding:1em 0em;
 
 }
-.Login-form{
-    padding-top:4em;
-}
-.Login-form-row{
-    display: flex;
-    flex-direction: column;
-    width:95%;
-    max-width:900px;
-    margin:0 auto;
-    margin-bottom:2em;
-    color:white;
-    opacity:0.9;
 
-}
-.Login-form-row input{
-    background-color:#1d2432;
-    border:none;
-    color:white;
-    padding:1em;
-    border-radius:0.4em;
-}
-.Login-form-row label{
-    border:none;
-    color:white;
-    opacity:0.8;
-    margin-bottom:0.5em;
-}
-.Login-form-row p{
-    border:none;
-    color:white;
-    opacity:0.8;
-    margin-bottom:0.5em;
-}
 
-.btn-submit-Login{
-    background-color:#9dccff;
-}
-.btn-submit-Login:hover,
-.btn-submit-Login:focus{
-    background-color:#007bffa5;
-}
 
-.button-login:hover,
-.button-login:focus
-{
-    background-color:black;
-    color: white;
-    scale: 1.03;
-}
+
 
 .login-layout{
     display: flex;
@@ -108,4 +48,105 @@ html, body {
         height:300px;
         margin:0 auto;
     }
+} */
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+.connecter{
+    border:none;
+    color:#44006b;
+    opacity:0.8;
+    margin-bottom:0.5em;
+    text-align: center;
+}
+
+.Login-form-row{
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    max-width:900px;
+    margin:0 auto;
+    margin-bottom:2em;
+    color:hsl(218, 41%, 30%) 35%;
+    opacity:0.9;
+
+}
+.Login-form{
+    padding-top:4em;
+}
+.Login-form-row input{
+    background-color:#ffffff;
+    border:none;
+    color:hsl(218, 41%, 30%) 35%;
+    padding:1em;
+    border-radius:0.4em;
+}
+.Login-form-row label{
+    border:none;
+    color:hsl(218, 41%, 45%) 15%;
+    opacity:0.8;
+    margin-bottom:0.5em;
+}
+
+.button-login{
+    background-color:#ad1fff;
+    display: inline-block;
+    padding:0.8em 2em;
+    margin:1em 0;
+    border:none;
+    border-radius:0.5em;
+    color:white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.button-login:hover,
+.button-login:focus
+{
+    background-color:#44006b;
+    color: white;
+    scale: 1.03;
+}
+.btn-submit-Login{
+    background-color:#44006b;
+}
+.btn-submit-Login:hover,
+.btn-submit-Login:focus{
+    background-color:#ad1fff;
 }
