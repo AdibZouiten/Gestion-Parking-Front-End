@@ -1,24 +1,62 @@
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import { useParams } from 'react-router-dom';
+
+
+// function ParkingDetails() {
+//   const [parking, setParking] = useState(null);
+//   const { idPark } = useParams();
+
+//   useEffect(() => {
+//     const fetchParkingDetails = async () => {
+//       try {
+//         const response = await axios.get(`http://127.0.0.1:8000/api/getParking/${idPark}`);
+//         setParking(response.data);
+//       } catch (error) {
+//         console.error(error);
+//       }
+//     };
+//     fetchParkingDetails();
+//   }, [idPark]);
+//   console.log(parking)
+//   if (!parking) {
+//     return <div>Loading...</div>;
+//   }
+
+//   return (
+//     <div>
+//       <h1>{parking.nomPark}</h1>
+//       <p>Ville : {parking.ville}</p>
+//       <p>Nombre des places libres: {parking.nbPLaceLibre}</p>
+//       <p>Prix : {parking.prix}</p>
+//     </div>
+//   );
+// }
+
+// export default ParkingDetails;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-
 function ParkingDetails() {
-  const [parking, setParking] = useState({});
+  const [parking, setParking] = useState(null);
   const { idPark } = useParams();
 
   useEffect(() => {
     const fetchParkingDetails = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/getParking/${idPark}`);
+        const response = await axios.get(`http://127.0.0.1:8000/api/parkings/${idPark}`);
         setParking(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error(error);
       }
     };
     fetchParkingDetails();
   }, [idPark]);
-  console.log(parking)
+
   if (!parking) {
     return <div>Loading...</div>;
   }
@@ -26,10 +64,9 @@ function ParkingDetails() {
   return (
     <div>
       <h1>{parking.nomPark}</h1>
-      <p>Adresse: {parking.ville}</p>
-      <p>Nombre de places: {parking.nbPLace}</p>
-      <p>Nombre de places libres: {parking.nbPLaceLibre}</p>
-      <p>Prix: {parking.prix}</p>
+      <p>Address: {parking.ville}</p>
+      <p>Nombre de Place: {parking.nbPlace}</p>
+      <p>Price: {parking.prix}</p>
     </div>
   );
 }
