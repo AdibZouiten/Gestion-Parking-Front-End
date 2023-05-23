@@ -176,7 +176,6 @@ function Ajouter() {
 
             </div>
             </div>
-
             <div>
             <label htmlFor="password" className="sr-only">Parking</label>
 
@@ -190,8 +189,6 @@ function Ajouter() {
                     </select>
             </div>
             </div>
-
-
             <div>
             <label htmlFor="password" className="sr-only">type de paiment</label>
 
