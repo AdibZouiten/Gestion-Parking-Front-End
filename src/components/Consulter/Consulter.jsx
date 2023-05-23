@@ -67,7 +67,7 @@ function Consulter() {
                         </button>
                     </div>
                 </form>
-                <Table bordered hover variant="white">
+                <Table className='cont-table' bordered hover variant="white">
                     <thead>
                         <tr>
                             <th>Nom du parking</th>

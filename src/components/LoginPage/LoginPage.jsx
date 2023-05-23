@@ -124,9 +124,11 @@ function LoginPage() {
                         Bienvenue à notre  <br />
                         <span style={{ color: 'hsl(218, 81%, 75%)' }}>logiciel de gestion du stationnement</span>
                     </h1>
-            <div>
+            <div/>
                 <label htmlFor="email" className="sr-only">Email</label>
 
+            <div>
+                <label htmlFor="email" className="sr-only">Email</label>
                 <div className="relative">
                 <input
                     type="email"
