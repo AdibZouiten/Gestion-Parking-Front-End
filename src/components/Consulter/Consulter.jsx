@@ -15,8 +15,8 @@ function Consulter() {
         axios
             .get(`http://127.0.0.1:8000/api/stationnement`, {
                 params: {
-                    startDate: startDate,
-                    endDate: endDate
+                    startDate: startDate, 
+                    endDate: endDate 
                 }
             })
             .then(response => {
