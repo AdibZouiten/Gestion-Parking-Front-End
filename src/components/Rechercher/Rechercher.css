@@ -25,6 +25,14 @@
     padding:1em;
     border-radius:0.4em;
 }
+.search-form-row select{
+    background-color:rgb(232, 232, 232);
+    border:none;
+    color:black;
+    padding:1em;
+    border-radius:0.4em;
+}
+
 .search-form-row label{
     border:none;
     color:black;
