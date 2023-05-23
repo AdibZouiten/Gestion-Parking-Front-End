@@ -100,7 +100,7 @@ import { useEffect } from 'react';
 import React from 'react';
 import './Ajouter.css';
 
-function Testtest() {
+function Ajouter() {
     //get all categories
 
     //get all subcategories
@@ -153,7 +153,7 @@ function Testtest() {
 
         </div>
 
-        <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4" onSubmit={handleSubmit}>
+        <form className="mx-auto mb-0 mt-8 max-w-md space-y-4" onSubmit={handleSubmit}>
             <div>
             <label htmlFor="email" className="sr-only">Email</label>
 
@@ -220,4 +220,4 @@ function Testtest() {
     );
 }
 
-export default Testtest;
+export default Ajouter;
