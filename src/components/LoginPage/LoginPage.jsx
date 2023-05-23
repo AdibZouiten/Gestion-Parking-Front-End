@@ -119,6 +119,10 @@ function LoginPage() {
             onSubmit={handleSubmit}
             >
             <p className="text-center text-lg font-medium">login in to your account</p>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 287a52a2d57430e635adbc418e3697ac0d3c92fe
             <div/>
                 <label htmlFor="email" className="sr-only">Email</label>
             <div>
