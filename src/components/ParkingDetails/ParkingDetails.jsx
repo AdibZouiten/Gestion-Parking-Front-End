@@ -26,13 +26,34 @@ function ParkingDetails() {
   const tarifs = parking.tarifs
 
   return (
-    <div>
-      <h1>{parking.parking.nomPark}</h1>
-      <p>Address: {parking.parking.ville}</p>
-      <p>Nombre de Place Libre: {parking.parking.nbPlaceLibre}</p>
-      <p>prix par carte :{tarifs[0].prix}</p>
-      <p>prix par espece :{tarifs[1].prix}</p>
+    <div class="container-details">
+      <div class="card-parking-info">
+        <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <div class="bg-white p-4 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              Address: {parking.parking.ville}
+            </time>
+
+            <a href="#">
+              <h3 class="mt-0.5 text-lg text-gray-900">
+              {parking.parking.nomPark}
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            Nombre de Place Libre: <strong>{parking.parking.nbPlaceLibre}</strong>
+            </p>
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              prix par carte: <strong>{tarifs[0].prix}</strong>
+            </p>
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              prix par espece: <strong>{tarifs[1].prix}</strong>
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
+
   );
 }
 

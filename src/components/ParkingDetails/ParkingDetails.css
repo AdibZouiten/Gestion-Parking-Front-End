@@ -1,3 +1,16 @@
 h1,p{
     color:white
 }
+.container-details{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-parking-info{
+    background-color: white;
+    width:95%;
+    max-width:400px;
+}
